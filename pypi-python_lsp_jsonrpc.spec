@@ -4,7 +4,7 @@
 #
 Name     : pypi-python_lsp_jsonrpc
 Version  : 1.0.0
-Release  : 12
+Release  : 13
 URL      : https://files.pythonhosted.org/packages/99/45/1c2a272950679af529f7360af6ee567ef266f282e451be926329e8d50d84/python-lsp-jsonrpc-1.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/99/45/1c2a272950679af529f7360af6ee567ef266f282e451be926329e8d50d84/python-lsp-jsonrpc-1.0.0.tar.gz
 Summary  : JSON RPC 2.0 server library
@@ -14,9 +14,6 @@ Requires: pypi-python_lsp_jsonrpc-license = %{version}-%{release}
 Requires: pypi-python_lsp_jsonrpc-python = %{version}-%{release}
 Requires: pypi-python_lsp_jsonrpc-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: python-lsp-jsonrpc
-Provides: python-lsp-jsonrpc-python
-Provides: python-lsp-jsonrpc-python3
 BuildRequires : pypi(ujson)
 
 %description
@@ -60,7 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641484084
+export SOURCE_DATE_EPOCH=1651102410
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
