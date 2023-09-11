@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-python_lsp_jsonrpc
-Version  : 1.1.0
-Release  : 22
-URL      : https://files.pythonhosted.org/packages/cd/71/b5e98d6b2b76e3cf0cba9e5f5298eed44008f7651ff93bdf97b5a3584eea/python-lsp-jsonrpc-1.1.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/cd/71/b5e98d6b2b76e3cf0cba9e5f5298eed44008f7651ff93bdf97b5a3584eea/python-lsp-jsonrpc-1.1.0.tar.gz
+Version  : 1.1.1
+Release  : 23
+URL      : https://files.pythonhosted.org/packages/ee/83/5a5ccfe879e7dfdc650168bb2fbe33d43afef735ea1ae62ee946ae1f86ee/python-lsp-jsonrpc-1.1.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/ee/83/5a5ccfe879e7dfdc650168bb2fbe33d43afef735ea1ae62ee946ae1f86ee/python-lsp-jsonrpc-1.1.1.tar.gz
 Summary  : JSON RPC 2.0 server library
 Group    : Development/Tools
 License  : MIT
@@ -17,7 +17,6 @@ Requires: pypi-python_lsp_jsonrpc-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
-BuildRequires : pypi(wheel)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -55,10 +54,10 @@ python3 components for the pypi-python_lsp_jsonrpc package.
 
 
 %prep
-%setup -q -n python-lsp-jsonrpc-1.1.0
-cd %{_builddir}/python-lsp-jsonrpc-1.1.0
+%setup -q -n python-lsp-jsonrpc-1.1.1
+cd %{_builddir}/python-lsp-jsonrpc-1.1.1
 pushd ..
-cp -a python-lsp-jsonrpc-1.1.0 buildavx2
+cp -a python-lsp-jsonrpc-1.1.1 buildavx2
 popd
 
 %build
@@ -66,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1694188944
+export SOURCE_DATE_EPOCH=1694446312
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
