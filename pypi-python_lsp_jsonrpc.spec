@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-python_lsp_jsonrpc
-Version  : 1.1.1
-Release  : 23
-URL      : https://files.pythonhosted.org/packages/ee/83/5a5ccfe879e7dfdc650168bb2fbe33d43afef735ea1ae62ee946ae1f86ee/python-lsp-jsonrpc-1.1.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/ee/83/5a5ccfe879e7dfdc650168bb2fbe33d43afef735ea1ae62ee946ae1f86ee/python-lsp-jsonrpc-1.1.1.tar.gz
+Version  : 1.1.2
+Release  : 24
+URL      : https://files.pythonhosted.org/packages/48/b6/fd92e2ea4635d88966bb42c20198df1a981340f07843b5e3c6694ba3557b/python-lsp-jsonrpc-1.1.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/48/b6/fd92e2ea4635d88966bb42c20198df1a981340f07843b5e3c6694ba3557b/python-lsp-jsonrpc-1.1.2.tar.gz
 Summary  : JSON RPC 2.0 server library
 Group    : Development/Tools
 License  : MIT
@@ -54,10 +54,10 @@ python3 components for the pypi-python_lsp_jsonrpc package.
 
 
 %prep
-%setup -q -n python-lsp-jsonrpc-1.1.1
-cd %{_builddir}/python-lsp-jsonrpc-1.1.1
+%setup -q -n python-lsp-jsonrpc-1.1.2
+cd %{_builddir}/python-lsp-jsonrpc-1.1.2
 pushd ..
-cp -a python-lsp-jsonrpc-1.1.1 buildavx2
+cp -a python-lsp-jsonrpc-1.1.2 buildavx2
 popd
 
 %build
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1694446312
+export SOURCE_DATE_EPOCH=1695655046
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
